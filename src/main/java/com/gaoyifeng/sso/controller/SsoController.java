@@ -1,5 +1,6 @@
 package com.gaoyifeng.sso.controller;
 
+import com.gaoyifeng.commom.infrastructure.Result;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -15,12 +16,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @ResponseBody
 public class SsoController {
     @PostMapping("/login")
-    public String login() {
-        return "登录成功";
+    public Result login() {
+        return Result.success("登录成功");
     }
     @PostMapping("/verify")
-    public String verify() {
-        return "鉴权成功";
+    public Result verify(){
+        return Result.success("鉴权成功");
     }
 
 }
