@@ -16,11 +16,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @ResponseBody
 public class SsoController {
     @PostMapping("/login")
-    public Result login() {
+    public Result<String> login() {
         return Result.success("登录成功");
     }
     @PostMapping("/verify")
-    public Result verify(){
+    public Result<String> verify(){
         return Result.success("鉴权成功");
     }
 
