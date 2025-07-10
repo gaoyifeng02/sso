@@ -4,6 +4,17 @@ server:
 spring:
   application:
     name: sso-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sso_db?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.gaoyifeng.sso.model
+  configuration:
+    map-underscore-to-camel-case: true
 
 # JWT配置
 jwt:

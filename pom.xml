@@ -12,7 +12,7 @@
     
     <groupId>com.gaoyifeng</groupId>
     <artifactId>sso</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.5-SNAPSHOT</version>
     <name>sso</name>
     <description>Single Sign-On Service</description>
     
@@ -34,6 +34,20 @@
             <scope>test</scope>
         </dependency>
         
+        <!-- MySQL驱动 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        
+        <!-- MyBatis Spring Boot Starter -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.1.4</version>
+        </dependency>
+        
         <!-- JWT依赖 -->
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
@@ -48,11 +62,11 @@
             <optional>true</optional>
         </dependency>
         
-        <!-- 引入commom模块 -->
+        <!-- 引入common模块 -->
         <dependency>
             <groupId>com.gaoyifeng</groupId>
-            <artifactId>commom</artifactId>
-            <version>0.0.3-SNAPSHOT</version>
+            <artifactId>common</artifactId>
+            <version>0.0.5-SNAPSHOT</version>
         </dependency>
     </dependencies>
     
