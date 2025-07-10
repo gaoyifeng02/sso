@@ -12,7 +12,7 @@
     
     <groupId>com.gaoyifeng</groupId>
     <artifactId>sso</artifactId>
-    <version>0.0.5-SNAPSHOT</version>
+    <version>0.0.6-SNAPSHOT</version>
     <name>sso</name>
     <description>Single Sign-On Service</description>
     
@@ -48,13 +48,6 @@
             <version>2.1.4</version>
         </dependency>
         
-        <!-- JWT依赖 -->
-        <dependency>
-            <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt</artifactId>
-            <version>0.9.1</version>
-        </dependency>
-        
         <!-- Lombok依赖 -->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -66,7 +59,7 @@
         <dependency>
             <groupId>com.gaoyifeng</groupId>
             <artifactId>common</artifactId>
-            <version>0.0.5-SNAPSHOT</version>
+            <version>0.0.6-SNAPSHOT</version>
         </dependency>
     </dependencies>
     
