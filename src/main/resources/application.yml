@@ -15,16 +15,3 @@ mybatis:
   type-aliases-package: com.gaoyifeng.sso.model
   configuration:
     map-underscore-to-camel-case: true
-
-# JWT配置
-jwt:
-  # JWT加解密使用的密钥
-  secret: gaoyifeng-sso-secret-key
-  # JWT的有效期（单位：秒）
-  expiration: 3600
-  # JWT的签发者
-  issuer: gaoyifeng-sso
-  # Token前缀
-  tokenPrefix: Bearer
-  # 存储Token的请求头
-  header: Authorization
