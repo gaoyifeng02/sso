@@ -15,3 +15,10 @@ mybatis:
   type-aliases-package: com.gaoyifeng.sso.model
   configuration:
     map-underscore-to-camel-case: true
+  
+jwt:
+  secret: "ssoJWTSecret"
+  expiration: 3600
+  header: "Authorization"
+  token-start-with: "Bearer "
+  base64-secret: "c3NvSldUU2VjcmV0"
